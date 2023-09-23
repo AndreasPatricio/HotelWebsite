@@ -1,0 +1,209 @@
+:root{
+    --blue: #CBDAFF;
+    --red: #FF8688;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 1px 1px 4px gray;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+.nav-logo a{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-content >*:not(:first-child){
+    margin-left: 48px;
+}
+
+.nav-content a:hover{
+    color: var(--red);
+}
+
+.nav-contact a{
+    background-color: var(--red);
+    border-radius: 10px;
+    padding: 10px 24px;
+    margin-left: 76px;
+    color: white;
+}
+
+.nav-right a{
+    font-size: 18px;
+}
+
+.nav-contact a:hover{
+    background-color: var(--blue);
+    color: black;
+}
+
+/* Promo */
+
+.promo-container{
+    padding: 130px 60px;
+}
+
+.promo-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+    background-color: var(--blue);
+    border-radius: 20px;
+    padding: 30px 50px 70px;
+    text-align: center;
+}
+
+.promo-title h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.promo-title p{
+    padding: 0px 100px;
+    font-size: 24px;
+}
+
+.promo-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card{
+    display: flex;
+    padding: 0px 60px;
+   
+}
+
+.card a img{
+    width: 400px;
+    height: 300px;
+    
+}
+
+.card a img:hover{
+    box-shadow: 1px 1px 8px grey;
+}
+
+.card-content{
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content p{
+    margin-bottom: 50px;
+}
+
+.promo-button a{
+    background-color: var(--red);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    
+}
+
+.promo-button a:hover{
+    background-color: var(--blue);
+    color: black;
+}
+
+hr{
+    margin: 40px;
+}
+
+/* Footer */
+
+#footer{
+    background-color: var(--blue);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 60px 150px;
+}
+
+.line{
+    border: solid;
+    color: black;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.footer-logo{
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.footer-content p{
+    margin-top: 35px;
+}
+
+.footer-media{
+    padding: 20px;
+}
+
+.footer-media h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sosmed{
+    margin-bottom: 30px;
+}
+
+.icon{
+    margin-top: 30px;
+}
+
+.icon>*:not(:first-child){
+    margin-left: 30px;
+}
+
+.icon a img{
+    width: 50px;
+}
+
+.telp{
+    font-size: 30px;
+}

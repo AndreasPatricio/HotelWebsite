@@ -1,0 +1,258 @@
+:root{
+    --blue: #CBDAFF;
+    --red: #FF8688;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 1px 1px 4px gray;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+.nav-logo a{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-content >*:not(:first-child){
+    margin-left: 48px;
+}
+
+.nav-content a:hover{
+    color: var(--red);
+}
+
+.nav-contact a{
+    background-color: var(--red);
+    border-radius: 10px;
+    padding: 10px 24px;
+    margin-left: 76px;
+    color: white;
+}
+
+.nav-right a{
+    font-size: 18px;
+}
+
+.nav-contact a:hover{
+    background-color: var(--blue);
+    color: black;
+}
+
+
+/* Home */
+
+#home{
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(rgba(9, 23, 45, 0.25), rgba(9, 23, 45, 0.25), rgba(9, 23, 45, 0.25)), url(./assets/home-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.home-container{
+    display: flex;
+    padding-top: 60px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-content{
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.home-content h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.home-content p{
+    font-size: 50px;
+}
+
+.home-button a{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: var(--red);
+    border-radius: 10px;
+    padding: 10px 24px;
+}
+
+.home-button a:hover{
+    background-color: var(--blue);
+    color: black;
+}
+
+/* About */
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 60px;
+}
+
+.about-container{
+    background-color: var(--blue);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.about-container h1{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.about-container p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Place */
+
+
+.place-container{
+    padding: 50px 60px 120px;
+}
+
+.place-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.card:hover .card-title{
+    display: block;
+    
+}
+
+.card:hover{
+    box-shadow: 6px 6px 16px grey;
+}
+
+.card-image img{
+    width: 400px;
+    height: 300px;
+}
+
+.card-title{
+    background-color: var(--blue);
+    width: 400px;
+    margin-top: 240px;
+    text-align: center;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    font-size: 18px;
+}
+
+
+/* Footer */
+
+#footer{
+    background-color: var(--blue);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 60px 150px;
+}
+
+.line{
+    border: solid;
+    color: black;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.footer-logo{
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.footer-content p{
+    margin-top: 35px;
+}
+
+.footer-media{
+    padding: 20px;
+}
+
+.footer-media h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sosmed{
+    margin-bottom: 30px;
+}
+
+.icon{
+    margin-top: 30px;
+}
+
+.icon>*:not(:first-child){
+    margin-left: 30px;
+}
+
+.icon a img{
+    width: 50px;
+}
+
+.telp{
+    font-size: 30px;
+}
+
+
